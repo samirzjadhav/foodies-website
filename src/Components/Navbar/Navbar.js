@@ -67,7 +67,7 @@ const Navbar = () => {
             className="w-36"
           />
           {/* Menu Section */}
-          <div>
+          <div className="hidden md:block">
             <ul className="flex gap-6">
               {NavMenu.map((menu) => {
                 return (
