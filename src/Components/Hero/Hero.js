@@ -100,7 +100,7 @@ const Hero = () => {
       <motion.div
         initial={{ opacity: 0, rotate: 60, x: 200, y: 100 }}
         whileInView={{ opacity: 1, rotate: 40, x: 0, y: 0 }}
-        className="w-[2500px] h-[2500px] rounded-3xl bg-lightYellow absolute top-[30%] left-[40%] z-0"
+        className="w-[2500px] h-[2500px] rounded-3xl bg-lightYellow absolute top-[-30%] left-[70%] z-0"
       ></motion.div>
     </main>
   );
