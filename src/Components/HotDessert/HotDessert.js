@@ -38,7 +38,12 @@ const HotDessert = () => {
           <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {HotDessertData.map((item) => {
               return (
-                <div className="group bg-white/50 shadow-md p-3 flex items-center gap-3 rounded-lg">
+                <motion.div
+                  variants={SlideUp(item.delay)}
+                  initial="hidden"
+                  whileInView="show"
+                  className="group bg-white/50 shadow-md p-3 flex items-center gap-3 rounded-lg"
+                >
                   <img
                     src={item.img}
                     alt=""
@@ -48,7 +53,7 @@ const HotDessert = () => {
                     <h3 className="text-xl font-semibold">{item.name}</h3>
                     <p className="text-xl text-yellow-500">{item.price}</p>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
