@@ -2,7 +2,7 @@ import React from "react";
 import { IoCartOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 
-const SlideUp = (delay) => {
+export const SlideUp = (delay) => {
   return {
     hidden: {
       y: "100%",
