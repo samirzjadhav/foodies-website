@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { SlideUp } from "../Hero/Hero";
+import { IoCartOutline } from "react-icons/io5";
 
 const Banner = () => {
   return (
@@ -20,6 +21,15 @@ const Banner = () => {
               Enjoy delicious, mouth-watering dishes crafted by our expert
               chefs. Visit us for an unforgettable dining experience.
             </p>
+            <motion.button
+              variants={SlideUp(2)}
+              initial="hidden"
+              whileInView="show"
+              className="btn-primary flex place-items-center gap-4 "
+            >
+              <IoCartOutline />
+              Order Now
+            </motion.button>
           </div>
         </div>
       </div>
