@@ -31,7 +31,14 @@ const PopularRecipe = () => {
     <>
       <section>
         <div className="container py-24">
-          <motion.h3></motion.h3>
+          <motion.h3
+            variants={SlideUp(0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            className="text-4xl text-center uppercase font-league font-semibold py-8"
+          >
+            Our Popular Recipe
+          </motion.h3>
         </div>
       </section>
     </>
