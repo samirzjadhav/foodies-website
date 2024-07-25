@@ -4,7 +4,7 @@ import { SlideUp } from "../Hero/Hero";
 
 const Banner = () => {
   return (
-    <>
+    <section>
       <div className="container py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-14 place-items-center">
           {/* image section */}
@@ -59,7 +59,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
